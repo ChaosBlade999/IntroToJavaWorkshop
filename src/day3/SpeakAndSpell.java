@@ -14,7 +14,16 @@ import javax.swing.JOptionPane;
 public class SpeakAndSpell {
 
 	public static void main(String[] args) {
-		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
+		for (int i = 0; i < 10; i++) {
+			speak("Spell claustrophobia");
+			String spelling=JOptionPane.showInputDialog("Spelling");
+			if(spelling.equals("claustrophobia")){
+				speak("Correct");
+			}else{
+				speak("Incorrect. It is spelled c,l,a,u,s,t,r,o,p,h,o,b,i,a, not "+ spelling);
+			}			
+		}
+
 
 		// 2. Catch the user's answer in a String
 

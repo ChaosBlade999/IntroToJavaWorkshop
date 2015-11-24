@@ -4,6 +4,14 @@ import javax.swing.JOptionPane;
 
 public class MadlibsOfTheAmazon {
 	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "If you find yourself having to cross a piranha-infested river, here's how to do it...");
+		String adj=JOptionPane.showInputDialog("Adjective","Adjective");
+		String liquid=JOptionPane.showInputDialog("Liquid","Liquid");
+		String body=JOptionPane.showInputDialog("Body Part","Body Part");
+		String verb=JOptionPane.showInputDialog("Verb","Verb");
+		String place=JOptionPane.showInputDialog("Place","Place");
+		JOptionPane.showMessageDialog(null, "Piranhas are more "+adj+" during the day, so cross the river at night. Piranhas are attracted to fresh "+liquid+ " and will most likely take a bite out of your "
+				+body+ " if you "+verb+" Whatever you do, if you have an open wound, try to find another way to getback to the "+place+" . Good luck!");
 
 		// Put this sentence in a pop up:
 		// If you find yourself having to cross a piranha-infested river, here's how to do it...

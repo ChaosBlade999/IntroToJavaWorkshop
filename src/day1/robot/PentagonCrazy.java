@@ -2,6 +2,8 @@ package day1.robot;
 
 import java.awt.Color;
 
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 /* Teacher’s note: before beginning, draw a pentagon and have students work out the angle that the robot will have to turn (360/5) */
@@ -10,6 +12,8 @@ public class PentagonCrazy {
 
 	private void makePrettyThings() {
 		// 1. Create a new Robot
+		String input=JOptionPane.showInputDialog("Turn amount?", "Amount");
+		int amt=Integer.parseInt(input);
 		Robot robot=new Robot();
 		robot.penDown();
 		robot.hide();
@@ -17,7 +21,7 @@ public class PentagonCrazy {
 		for (int i = 0; i < 800; i++) {
 			robot.setRandomPenColor();
 			robot.move(i);
-			robot.turn(15);
+			robot.turn(amt);
 			robot.turn(1);
 		}
 		// 3. Put the robot's pen down
